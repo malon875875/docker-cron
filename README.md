@@ -17,3 +17,11 @@ Example: docker exec -it bc8a9bbfbba9 /bin/bash
 
 >Note: Try running above commands using sudo if you get Permission Denied Error.  
 `Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied`
+
+### Build with docker compose
+* docker-compose build
+* docker-compose up -d
+
+### Rebuild with docker compose
+* change content of files
+* docker-compose up -d --build
