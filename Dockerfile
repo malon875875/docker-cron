@@ -1,8 +1,5 @@
 FROM ubuntu:20.04
 
-# Fix not able to find entrypoint.sh
-WORKDIR /
-
 # Install cron and tzdata for Fixing scheduler timezone
 RUN apt-get update -y && apt-get install -y cron && apt-get install -y tzdata
 
